@@ -6,7 +6,7 @@ int main(){
     int x;
     cout<<"Enter number of rows : ";
     cin>>x;
-    int a=5;
+    int a;
     for(int i=1; i<=x ; i++){
         if(i%2!=0) a=1;
         else a=0;
@@ -20,3 +20,4 @@ int main(){
         cout<<endl;
     }
 }
+

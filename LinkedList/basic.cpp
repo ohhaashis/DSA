@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 class Node {
 public :
     int data ;
@@ -14,7 +12,6 @@ public :
     }
 
 };
-
 
 
 class List {
@@ -102,6 +99,21 @@ public :
         temp->next = newNode;
     }
 
+    // void reverse() {
+
+    // // ListNode* reverseList(ListNode* head) {
+    //     Node* prev = NULL;
+    //     Node* curr = head;
+    //     Node* next = NULL;
+
+    //     while(curr != NULL) {
+    //         next = curr->next;
+    //         curr->next = prev;
+    //         prev = curr;
+    //         curr = next;
+    //     }cout<<prev<<endl;
+    // }
+
     void printLL() { //O(n)
         Node* temp = head;
         while(temp != NULL) {
@@ -126,7 +138,6 @@ public :
 };
 
 
-
 int main(){
     List ll;
 
@@ -148,6 +159,8 @@ int main(){
 
     cout<<ll.search(2)<<endl;
     cout<<ll.search(4)<<endl;
+
+   // ll.reverse();
 
     return 0;
 }

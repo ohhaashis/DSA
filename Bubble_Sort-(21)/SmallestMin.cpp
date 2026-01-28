@@ -22,6 +22,7 @@ int main(){
     
 
     // 2nd approach => Binary Search
+    
     int lo = 0;
     int hi = n-1 ;
     int ans=-1;

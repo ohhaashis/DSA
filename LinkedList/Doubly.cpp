@@ -59,6 +59,21 @@ class DoublyList {
         delete temp;
     }
 
+    void pop_back() {
+
+        if(tail == NULL){
+            cout<<"DLL is Empty\n";
+            return;
+        }
+        Node* temp = tail;
+        tail = tail->prev;
+        if(tail != NULL){
+            tail->next = NULL ;
+        }
+        tail->prev = NULL ;
+        delete temp;
+    }
+
     void print() {
         Node* temp = head;
         while(temp != NULL) {

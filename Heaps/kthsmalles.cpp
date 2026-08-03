@@ -13,3 +13,4 @@ int main(){
 
     cout<<pq.top(); 
 }
+// S.C = O(n)
